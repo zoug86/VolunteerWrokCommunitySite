@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* Common Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: sans-serif;
+}
+
+/* By default: 1 rem = 60px */
+/* make 1 rem = 10px */
+html{
+    font-size: 62.5%;
+}
+
+body{
+    overflow-x: hidden;
+    margin: 0;
+}
+
+
+/* End of Common Styles */
+.top-bar{
+    width: 100%;
+    height: 5vh;
+    background-color: rgb(191, 191, 63);
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-size: 1.8rem;
+    
+}
+
+/* Section 0 */
+
+.section-0{
+  height: 100%;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.section-0-img{
+    height: 90vh;
+    width: 100%;
+}
+
+.section-0-text{
+background-color: rgba(0,0,0, 0.2); /* Black w/opacity/see-through */
+  color: rgb(233, 240, 230);
+  font-size: 3rem;
+  font-weight: bold;
+  border: 0.1 solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;  
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+}
+
+.section-0-text p{
+    padding: 1.5rem 0;
+    line-height: 2.5rem;
+    font-size: 2rem;
+    opacity: 0.8;
+    letter-spacing: 0.2rem;
+}
+
+/* End of Section 0 */
+/* Navbar Section */
+.navbar{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F8F8F8;
+    top: 4.5rem;
+    position: fixed;
+    z-index: 100;
+    margin-bottom: 3rem;
+    border-radius: 0.1rem;
+    box-shadow: 0 0 0.1rem 0;
+  }
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo-img{
+    width: 10rem;
+    height: 8rem;
+}
+
+.logo-text{
+    color: rgb(39, 35, 35);
+    font-size: 2.5rem;
+    transition: color 0.3s;
+    font-family: 'Lobster', sans-serif;
+    letter-spacing: .1rem;
+}
+
+.logo-text:hover{
+    color:rgb(201, 96, 11);
+    transition: color 0.3s;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-link{
+    color: rgb(39, 35, 35);
+    margin: 0 3rem;
+    opacity: 1;
+}
+
+.navbar-link span{
+    padding: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    margin-top: .5rem;
+    transition: color 0.3s, opacity 0.2s, text-decoration 0.2s; 
+}
+
+.navbar-link span:hover, .home{
+    background-color: rgb(201, 96, 11, 0.9);
+    border-radius: 0.8rem;
+}
+
+/* End of Navbar Section */
+
+/* Section 1-1 */
+
+.section-1-1{
+    height: 100%;
+    margin-bottom: 0;
+    position: relative;
+    background: rgba(0, 0, 0, 0.8); /*can be anything, of course*/
+  }
+  
+  .section-1-1-img{
+      height: 70vh;
+      background-image: url("canada-flag.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      /* filter: blur(0rem);*/
+      opacity: 0.8;
+      /* -webkit-filter: blur(0rem); */ 
+      z-index: -100;
+  }
+  
+  .section-1-1-text{
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    border: 0.1rem solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;  
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .section-1-1-text p{
+      padding: 1.5rem 0;
+      line-height: 2.5rem;
+      font-size: 2rem;
+      opacity: 0.8;
+      letter-spacing: 0.3rem;
+  }
+  
+  /* End of Section 1-1 */
+
+/* -------------Section 1--------------*/
+.section-1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    background-color: rgb(255, 249, 242);
+    padding: 5rem;
+}
+
+.img-row1{
+    /* margin: 0.1rem; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.img-row2{
+    margin: 0.1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section1-img{
+    width: 30%;
+    height: 50%;
+    margin-bottom: 2rem;
+}
+
+/* -------------End of Section 1--------------*/
+
+/* -------------Section 2--------------*/
+.section-2{
+    padding: 5rem;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.section-2-img{
+    height: 50vh;
+    background-image: url("charity-about-us.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(0rem);
+    opacity: 0.8;
+    -webkit-filter: blur(0rem);
+    margin-bottom: 5rem;
+}
+
+.section-2-heading{
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    border: 0.1rem solid#f1f1f1;
+    width: 50%;
+    font-size: 6rem;
+    color: #fff;
+    font-weight: 700;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 0.5rem;
+    text-transform: capitalize;
+    text-shadow: 0.3rem 0.3rem 0.3rem #000;
+    margin-bottom: 5rem;
+    text-align: center;
+    padding: 5rem;
+}
+
+.section-2-content{
+    background-color:  #f5f4f4;
+    line-height: 3rem;
+    padding: 5rem;
+    font-size: 1.7rem;
+    font-family: 'Times New Roman', Times, serif;  
+}
+
+
+.goals{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+
+.strong{
+    font-size: 1.7rem;
+    font-weight: 900;
+}
+
+.goals-list{
+    margin-left: 5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.7rem;
+}
+/* -------------End of Section 2--------------*/
+
+/*-------------Section 3--------------*/
+.section-3{
+    width: 100%;
+    color: #000;
+    background-color:  #fff;
+    margin-bottom: 5rem;
+}
+
+.section-3-1{
+    height: 100%;
+    margin-bottom: 3rem;
+    position: relative;
+    background: rgba(0, 0, 0, 0.9); /*can be anything, of course*/
+  }
+  
+  .section-3-1-img{
+      height: 70vh;
+      background-image: url("charity.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      filter: blur(0rem);
+      opacity: 0.8;
+      -webkit-filter: blur(0rem);
+      z-index: -100;
+  }
+
+  .overlay {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: auto;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.7); /*can be anything, of course*/
+}
+  
+  .section-3-1-text{
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    border: .1rem solid #f1f1f1;
+    color: #fff;
+    font-size: 6rem;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;  
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .section-3-1-btn{
+      margin-top: 5rem;
+      color: #fff;
+      text-transform: uppercase;
+      background-color: rgb(191, 191, 63);
+      width: 20rem;
+      padding: 2rem;
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: 0.2rem;
+      border-radius: 5rem;
+      cursor: pointer;
+      border: none;
+  }
+
+  .section-3-1-btn:hover{
+      background-color: #a0a029;
+  }
+
+.section-2-text{
+    font-size: 1.5rem;
+}
+
+.division-main-title{
+    text-align: center;
+}
+
+.section-3-divisions{
+    display: flex;
+   justify-content: space-evenly;   
+}
+
+.division-1, .division-2, .division-3{
+    margin: 0 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.division-main-title{
+    margin: 8rem;
+    font-size: 4rem;
+    letter-spacing: 0.1rem;
+    font-family: 'Times New Roman', Times, serif;
+    color:rgba(15, 15, 15, 0.6)
+}
+
+.paragraph, .header{
+    margin-bottom: 5rem;;
+}
+
+.division-text, .division-title{
+    text-align: center;
+}
+
+.paragraph-title, .division-title{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+}
+
+.paragraph-text, .division-text{
+    font-size: 1.8rem;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.1rem;
+    line-height: 2.5rem;
+}
+
+.division-img{
+    width: 20rem;
+    height: 20rem;
+    margin-bottom:5rem;
+}
+
+/* -------------End of Section 3--------------*/
+
+
+/* -------------Section 4--------------*/
+
+.section-4{
+    /* padding: 5rem; */
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.section-4-img{
+    height: 100vh;
+    background-image: url("muslim.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(0rem);
+    opacity: 0.8;
+    -webkit-filter: blur(0rem);
+    /* margin-bottom: 5rem; */
+}
+
+.section-4-form{
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
+    /* border: 3px solid#f1f1f1; */
+    width: 35%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 5rem;
+    padding: 0 0 5rem 0;
+}
+
+.form-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #a0a029;
+    margin-bottom: 3rem;
+    padding: 5rem 3rem;
+}
+
+.form-header-text{
+    font-size: 2.5rem;
+    line-height: 2.3rem;
+    font-style: italic;
+    padding: 1.5rem;
+    color: #fff;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input{
+    width: 85%;
+    padding: 1.5rem;
+    margin: 0rem 1rem 1.5rem 1.5rem;
+    background-color: rgb(63, 60, 60);
+    color: white;
+    border: none;
+    border-radius: 0.2rem;
+    font-size: 1.6rem;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(240, 235, 235);
+    font-weight: bold;
+    font-size: 1.6rem;
+    opacity: 0.8;
+  }
+  
+
+.form-btn{
+    width: 85%;
+    padding: 1.5rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+    background-color: #a0a029;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0.1rem 0.2rem;
+}
+
+.form-btn:hover{
+ cursor: pointer;
+ background-color: #909056;
+}
+
+/* -------------End of Section 4--------------*/
+
+/* -------------Section 5--------------*/
+.section-5{
+    /* padding: 5rem; */
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 10rem;
+}
+
+.section-5-img{
+    height: 100vh;
+    background-image: url("team.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(0rem);
+    opacity: 0.8;
+    -webkit-filter: blur(0rem);
+    /* margin-bottom: 5rem; */
+}
+/* -------------End of Section 5--------------*/
+
+.UP-btn{
+    padding: 1.5rem;
+    width: 5rem;
+    height: 5rem;
+    position: fixed;
+    top: 90%;
+    right: 1%;
+    background-color: rgb(5, 5, 5, 0.6);
+    z-index: 1000;
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 50%;
+    scroll-behavior: smooth;
+}
+
+.footer{
+    height: 30vh;
+    width: 100%;
+    background-color: #a0a029;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fotter-text{
+    font-size: 2rem;
+    color: #fff;
+    line-height: 3rem;
+}
+.footer-btn{
+    margin-top: 5rem;
+    color: #fff;
+    text-transform: uppercase;
+    background-color:#a0a029;
+    width: 20rem;
+    padding: 2rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    border-radius: 5rem;
+    border: 0.1rem solid #fff;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.footer-btn:hover{
+    cursor: pointer;
+    background-color:#909056;
+}
